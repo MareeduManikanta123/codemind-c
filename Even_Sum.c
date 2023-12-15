@@ -1,24 +1,22 @@
 #include<stdio.h>
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	int acet[n],i;
-	for(i=0;i<=n;i++)
-	{
-		scanf("%d",&acet[i]);
-	}
-	int sum=0;
-	for(i=0;i<n;i++)
-	{
-	    
-	if(acet[i]%2==0)
-	
-	{
-	    
-		sum=sum+acet[i];
-	}
-	}
-	printf("%d",sum);
-
+    int n,i,arr[n],sum=0,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+        for(i=0;i<n;i++)
+        {
+             if(arr[i]%2==0)
+             {
+        sum=sum+arr[i];
+        }
+        }
+    
+       
+    
+    printf("%d",sum);
 }
